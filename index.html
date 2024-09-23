@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <h1>Header Content</h1>
+        <h1>WDD 131: Dynamic Web Fundamentals- <span>Phoebe Lin</span></h1>
         <nav class="navigation">
             <a href="www.linkedin.com/in/sin-yi-lin">LinkedIn</a>
             <a href="https://byui.instructure.com/">I-Learn</a>
@@ -23,52 +23,69 @@
     </header>
     <main>
         <section class="card">
-            <article class="me">
-                <div class="introduction">
-                    <h2>About Me</h2>
-                    <p>my name is Phoebe Lin from Taiwan. I love to learn new things and outdoor activities, like
-                        mountain climbing, hiking, traveling,
-                        bicycle riding and so on. My major is software development. I'd love to know more about you.</p>
+            <div class="me">
+                <h2>About Me</h2>
+                <article class="introduction">
+                    <p> My name is Phoebe Lin from Taiwan. I love to learn new things and outdoor activities, like
+                        mountain climbing, hiking, traveling, bicycle riding and so on. My major is software
+                        development.
+                        I have already completed the requirements for my first C129 certificate and am now progressing
+                        towards my next certificate.
+                        However, since my degree planner for this semester doesn't include any programming courses, only
+                        general education courses,
+                        I wanted to continue practicing web development. That's why I enrolled in this course to improve
+                        my web design skill.
+                        I'd love to know more about you.</p>
                     <picture>
                         <source media="(max-width: 450px)" srcset="images/me.webp">
                         <img class="portrait" src="images/me.webp" alt="This portrait is mine." loading="lazy"
                             width="225" height="308">
                     </picture>
-                </div>
-                <div>
-                    <h5>Tainan, Taiwan</h5>
-                    <p>Tainan City, located in southern Taiwan, is one of the oldest cities in the country and is known
-                        for its rich cultural heritage.
-                        It is divided into 37 administrative districts, including popular areas like Anping, East, and
-                        Yongkang districts. As of 2023,
+                </article>
+                <article class="population">
+                    <h4>Tainan, Taiwan</h4>
+                    <p> Tainan City, located in southern Taiwan, is one of the oldest cities in the country and is known
+                        for its rich cultural heritage. It is divided into 37 administrative districts.
                         Tainan has a population of around 1.86 million people. The city is famous for its historical
-                        landmarks, traditional temples,
-                        and vibrant night markets. Tainan’s economy is supported by both agriculture and technology
+                        landmarks, traditional temples, and vibrant night markets.
+                        Tainan’s economy is supported by both agriculture and technology
                         industries, with a growing focus on tourism.
                         Its warm climate and coastal location make it an attractive destination year-round.</p>
-
-                </div>
-            </article>
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 360px)" srcset="images/tw-flag.webp">
+                            <img class="portrait" src="images/tw-flag.webp" alt="This portrait is mine." loading="lazy"
+                                width="144" height="144">
+                        </picture>
+                        <figcaption>Official Flag of Taiwan</figcaption>
+                    </figure>
+                </article>
+            </div>
 
         </section>
         <section class="card">
-            <h3>Web Dev Resources</h3>
-            <a href="https://wireframe.cc/">Wireframe</a>
-            <a href="https://www.siegemedia.com/contrast-ratio">Contrast Ratio</a>
-            <a href="https://tinypng.com/">Tinypng</a>
-            <a href="https://cloudconvert.com/jpg-to-webp">Jpg-to-webp</a>
-            <a href="https://dev.to/">DEV Community</a>
-            <a href="https://www.ifreesite.com/favicon/">Favicon</a>
-            <a href="https://www.w3schools.com/howto/">w3 Schools</a>
+            <article class="resource">
+                <h3>Web Dev Resources</h3>
+                <ul>
+                    <li><a href="https://wireframe.cc/">Wireframe</a></li>
+                    <li><a href="https://www.siegemedia.com/contrast-ratio">Contrast Ratio</a></li>
+                    <li><a href="https://tinypng.com/">Tinypng</a></li>
+                    <li><a href="https://cloudconvert.com/jpg-to-webp">Jpg-to-webp</a></li>
+                    <li><a href="https://dev.to/">DEV Community</a></li>
+                    <li><a href="https://www.ifreesite.com/favicon/">Favicon</a></li>
+                    <li><a href="https://www.w3schools.com/howto/">w3 Schools</a></li>
+                </ul>
+            </article>
         </section>
     </main>
     <footer>
-        <h4>Footer Content</h4>
-        <p id="footer-name"><span>&copy;<span id="year"> </span> |</span><span> Phoeb Lin |</span><img id="flag-footer"
-                src="images/tw-flag.webp" alt="Taiwan's flag"><span> Tainan City, Taiwan |</span></p>
+        <p id="footer-name"><span>&copy;<span id="year"> </span> |</span><span> Phoeb Lin |</span><span> Tainan City,
+                Taiwan |</span></p>
         <p id="lastModified">Last Modified</>
         </p>
+
     </footer>
+    <script src="scripts/getdates.js"></script>
 </body>
 
 </html>
