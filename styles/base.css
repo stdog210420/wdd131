@@ -197,6 +197,7 @@ figcaption {
 .resource {
     grid-column: 2/3;
     align-items: left;
+    justify-content: center;
 }
 
 .resource>h3 {
