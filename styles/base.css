@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&family=Lato:wght@300&family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap');
+
 
 :root {
     /* change the values below to your colors from your palette */
@@ -9,7 +10,7 @@
 
 
     /* change the values below to your chosen font(s) */
-    --heading-font: "Montserrat", "Lato", Helvetica;
+    --heading-font: "Comic Neue", Lato, Helvetica;
     --paragraph-font: "Open Sans", Helvetica, sans-serif;
 
     /* these colors below should be chosen from among your palette colors above */
@@ -45,8 +46,7 @@ body {
     grid-template-rows: 1fr auto 1fr;
     margin: 0;
     padding: 0;
-    /* width: 100%;
-    height: 100%; */
+    font-family: var(--heading-font);
 }
 
 header {
@@ -187,9 +187,12 @@ main {
     margin: 1rem;
 }
 
-/* .population>figcaption {
-    color: var(--headline-color-on-white);
-} */
+figcaption {
+    font-family: var(--heading-font);
+    font-weight: 200;
+    /* 設置為正常粗細 */
+    color: var(--accent2-color);
+}
 
 .resource {
     grid-column: 2/3;
@@ -217,6 +220,7 @@ h4 {
 
 h1 {
     color: var(--nav-hover-background-color);
+    font-weight: bolder;
 }
 
 h4 {
