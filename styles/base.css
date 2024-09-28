@@ -191,7 +191,7 @@ figcaption {
 
 .resource {
     grid-column: 2/3;
-    align-content: left;
+    align-content: flex-start;
     justify-content: center;
 }
 
