@@ -116,7 +116,6 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* gap: 2rem; */
 }
 
 .resource {
@@ -125,13 +124,6 @@ main {
     justify-content: center;
 }
 
-/* .introduction {
-    grid-row: 2/3;
-}
-
-.population {
-    grid-row: 3/4;
-} */
 
 .introduction,
 .population {
@@ -152,7 +144,7 @@ main {
     grid-column: 2/3;
 }
 
-.population>h2 {
+.population>h3 {
     grid-column: 1/3;
     grid-row: 1/2;
     margin: 0 auto;
@@ -190,7 +182,7 @@ figcaption {
 
 
 
-.introduction>h2,
+.me>h2,
 .resource>h2 {
     margin: 0;
     width: 100%;
@@ -212,6 +204,11 @@ h2 {
     color: var(--nav-hover-background-color);
     padding: 1rem;
 }
+
+h3 {
+    color: var(--accent1-color);
+}
+
 
 h1>span {
     color: var(--primary-color)
