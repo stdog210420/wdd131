@@ -44,8 +44,8 @@ body {
 
 header {
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background-color: var(--accent2-color);
     text-align: center;
 }
@@ -62,13 +62,12 @@ header {
 }
 
 .navigation {
+    grid-column: 2/3;
     align-items: center;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     text-align: center;
-    background-color: var(--paragraph-color-on-color);
-
 }
 
 .navigation a {
@@ -76,7 +75,7 @@ header {
     text-align: center;
     padding: 0.5rem;
     text-decoration: none;
-    color: var(--nav-hover-link-color);
+    color: var(--nav-hover-background-color);
 }
 
 .navigation a:hover {
@@ -84,7 +83,8 @@ header {
     text-align: center;
     padding: 0.5rem;
     text-decoration: none;
-    color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+
 }
 
 main {
@@ -111,13 +111,16 @@ main {
 
 .temple img {
     border-radius: 15px;
+
 }
 
 
 h1 {
+    padding-left: 1.5rem;
+    grid-column: 1/2;
     font-size: 1.5rem;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     color: var(--nav-hover-background-color);
 }
 
@@ -153,7 +156,7 @@ footer {
     .temple img {
         width: auto;
         height: auto;
-        max-width: 100%;
+        max-width: 90%;
     }
 
     .navigation a {
