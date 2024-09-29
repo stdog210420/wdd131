@@ -180,7 +180,6 @@ footer {
 
     #menu.open {
         display: block;
-        /* 添加 .open 類時顯示 */
     }
 
     .navigation.open a {

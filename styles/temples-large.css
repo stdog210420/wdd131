@@ -37,10 +37,6 @@
         /* hide hamburger button */
     }
 
-    .navigation a {
-        display: none;
-    }
-
     .temple-album {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -54,10 +50,6 @@
         height: auto;
         max-width: 340px;
         border-radius: 15px;
-    }
-
-    .navigation a {
-        width: fit-content;
     }
 
     .navigation a:not(#menu),
