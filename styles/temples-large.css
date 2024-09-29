@@ -27,7 +27,7 @@
 }
 
 /* Desktop Views ****************************/
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
     body {
         font-size: 20px;
     }
@@ -50,8 +50,10 @@
     }
 
     .temple img {
-        max-width: 350px;
-        max-height: auto;
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+
         border-radius: 15px;
     }
 

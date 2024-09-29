@@ -74,7 +74,7 @@ header {
 .navigation a {
     width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 0.5rem;
     text-decoration: none;
     color: var(--nav-hover-link-color);
 }
@@ -82,7 +82,7 @@ header {
 .navigation a:hover {
     width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 0.5rem;
     text-decoration: none;
     color: var(--nav-hover-background-color);
 }
@@ -138,7 +138,7 @@ footer {
 }
 
 /* mobile view */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
     body {
         font-size: 14px;
         display: block;
@@ -151,8 +151,9 @@ footer {
     }
 
     .temple img {
+        width: auto;
+        height: auto;
         max-width: 100%;
-        max-height: auto;
     }
 
     .navigation a {
@@ -166,6 +167,7 @@ footer {
 
     #menu::before {
         content: "☰";
+        font-size: 1.5rem;
         font-weight: bolder;
     }
 
