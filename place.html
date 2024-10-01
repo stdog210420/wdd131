@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Phoebe Lin - W03 Assignment</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Phoebe Lin - W03 Assignment">
+    <meta name="author" content="Phoebe Lin">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap&family=Lato:wght@300&family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Taiwan</h1>
+    </header>
+    <main>
+        <picture class="hero">
+            <source media="(max-width: 2048px)" srcset="images/leopard-cat.webp">
+            <img class="portrait" src="images/leopard-cat-medium.webp" alt="This portrait is a leopard cat."
+                loading="lazy" width="500" height="333">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <div class="data-content">
+                <div class="title">
+                    <p>Area: </p>
+                    <p>Population: </p>
+                    <p>Capital: </p>
+                    <p>Language: </p>
+                    <p>Currency: </p>
+                    <p>Time Zone: </p>
+                    <p>Calling Code: </p>
+                    <p>Internet TLD: </p>
+                </div>
+                <div class="content">
+                    <p> 36,197 sq km</p>
+                    <p> 23,950,214</p>
+                    <p> Taipei</p>
+                    <p> Mandarin Chinese</p>
+                    <p> TWD</p>
+                    <p> UTC+8</p>
+                    <p> +886</p>
+                    <p> tw</p>
+                </div>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-content">
+                <div class="title">
+                    <p>Temperature: </p>
+                    <p>Condition: </p>
+                    <p>Wind: </p>
+                    <p>Wild Chill: </p>
+                </div>
+                <div class="content">
+                    <p><span class="temperature">29</span>&deg;C</p>
+                    <p><span class="condition">Thundershowers</span></p>
+                    <p><span class="wind">5</span>km/hr</p>
+                    <p><span class="chill"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="footer-name"><span>&copy;<span id="year"> </span> |</span><span> Phoeb Lin |</span><span> Tainan City,
+                Taiwan |</span></p>
+        <p id="lastModified">Last Modified</p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</body>
+
+</html>
