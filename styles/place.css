@@ -160,7 +160,7 @@ footer {
 
 
 /* mobile view */
-@media screen and (max-width: 1022px) {
+@media screen and (max-width: 1023px) {
     body {
         font-size: 14px;
         display: block;
@@ -180,8 +180,17 @@ footer {
     }
 
     .weather h2::after {
-        content: url("https://stdog210420.github.io/wdd131/images/cloudy-rain-sunny.svg");
-        margin: 0;
+        content: "";
+        display: inline-block;
+        width: 30px;
+        /* Adjust as needed */
+        height: 30px;
+        /* Adjust as needed */
+        background-image: url("https://stdog210420.github.io/wdd131/images/cloudy-rain-sunny.svg");
+        background-size: cover;
+        margin-left: 10px;
+        vertical-align: middle;
+
     }
 
 

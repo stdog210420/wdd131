@@ -1,22 +1,32 @@
-// const temperature = parseFloat(document.querySelector(".temperature"));
-// const windSpeed = parseFloat(document.querySelector(".wind"));
-
-const temperature = parseFloat(29);
-const windSpeed = parseFloat(20);
+const temp = 30; // You need to define temp and windSpeed
+const windSpeed = 10;
 const chill = document.querySelector(".chill");
-const temp = Math.floor(temperature * (9 / 5) + 32);
-
-
-
 
 function calculateWindChill(temp, windSpeed) {
         const windChill = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temp * Math.pow(windSpeed, 0.16));
 
         if (windChill > 0) {
-                chill.innerHTML = `${windChill.toFixed(2)}°F`;
+                return windChill
         } else {
-                return chill.innerHTML = `N/A`;
+                return N / A;
         }
-        console.log(windChill);
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+
+        const windChill = calculateWindChill(temp, windSpeed); // Calculate wind chill
+        if (windChill !== "N/A") {
+                chill.innerHTML = `${parseFloat(windChill).toFixed(2)}°F`; // Ensure it's a number before fixing decimals
+        } else {
+                chill.innerHTML = "N/A"; // Display "N/A" if wind chill is not applicable
+        }
+});
+
+
+
+
+
+
+
+
 
