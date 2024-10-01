@@ -179,15 +179,12 @@ footer {
         color: var(--accent2-color);
     }
 
-    .weather h2::after {
-        content: "";
+    .weather-icon {
         display: inline-block;
         width: 30px;
-        /* Adjust as needed */
         height: 30px;
-        /* Adjust as needed */
-        background-image: url("https://stdog210420.github.io/wdd131/images/cloudy-rain-sunny.svg");
-        background-size: cover;
+        /* background-image: url("https://stdog210420.github.io/wdd131/images/cloudy-rain-sunny.svg");
+        background-size: cover; */
         margin-left: 10px;
         vertical-align: middle;
 
