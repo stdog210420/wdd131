@@ -129,7 +129,7 @@ main {
 .weather h2 {
     width: 100%;
     background-color: rgb(145, 57, 62, 0.8);
-    color: var(--nav-background-color);
+    color: var(--nav-hover-background-color);
     margin: 0;
     padding: 1rem;
     margin-top: 10px;
