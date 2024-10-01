@@ -180,7 +180,7 @@ footer {
     }
 
     .weather h2::after {
-        content: url("images/cloudy-rain-sunny.svg");
+        content: url("https://stdog210420.github.io/wdd131/images/cloudy-rain-sunny.svg");
         margin: 0;
     }
 
