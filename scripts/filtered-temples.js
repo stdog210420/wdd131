@@ -1,6 +1,7 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 const templeCards = document.querySelector('.temple-cards');
+const h2title = document.querySelector('.h2-title');
 
 
 hamButton.addEventListener('click', () => {
@@ -115,30 +116,35 @@ createTempleCard(temples);
 let homeLink = document.querySelector("#home");
 homeLink.addEventListener("click", () => {
     createTempleCard(temples);
+    h2title.innerHTML = "Home";
 })
 
 //Old - temples built before 1900
 let oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1990));
+    h2title.innerHTML = "Old Temples";
 })
 
 //New - temples built after 2000
 let newLink = document.querySelector("#new");
 newLink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000));
+    h2title.innerHTML = "New Temples";
 })
 
 //Large - temples larger than 90000 square feet
 let largeLink = document.querySelector("#large");
 largeLink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => temple.area > 90000));
+    h2title.innerHTML = "Large Temples";
 })
 
 //Small - temples smaller than 10000 square feet
 let smallLink = document.querySelector("#small");
 smallLink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => temple.area < 10000));
+    h2title.innerHTML = "Small Temples";
 })
 
 
