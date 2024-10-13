@@ -108,57 +108,73 @@ const temples = [
     },
 ];
 
-function displayResults(temples) {
-    temples.forEach(temple => {
-        // Create a figure element for each temple
-        const figure = document.createElement("figure");
+// Call the displayResults function and pass the temples array
+createTempleCard(temples);
 
+//Home - displays all the temples stored in the array.
+let homeLink = document.querySelector("#home");
+homeLink.addEventListener("click", () => {
+    createTempleCard(temples);
+})
+
+//Old - temples built before 1900
+let oldLink = document.querySelector("#old");
+oldLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1990));
+})
+
+//New - temples built after 2000
+let newLink = document.querySelector("#new");
+newLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000));
+})
+
+//Large - temples larger than 90000 square feet
+let largeLink = document.querySelector("#large");
+largeLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+})
+
+//Small - temples smaller than 10000 square feet
+let smallLink = document.querySelector("#small");
+smallLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+})
+
+
+function createTempleCard(filteredTemples) {
+    templeCards.innerHTML = "";
+    filteredTemples.forEach(temple => {
+        // Create a figure element for each temple
+        let figure = document.createElement("figure");
         // Create elements for each templeCards
-        const figcaption = document.createElement("figcaption");
-        const h3 = document.createElement("h3");
-        const p1 = document.createElement("p");
-        const p2 = document.createElement("p");
-        const p3 = document.createElement("p");
-        const img = document.createElement("img");
-        const span1 = document.createElement('span1');
-        const span2 = document.createElement('span2');
-        const span3 = document.createElement('span3');
+        let figcaption = document.createElement("figcaption");
+        let templeName = document.createElement("h3");
+        let location = document.createElement("p");
+        let dedicated = document.createElement("p");
+        let area = document.createElement("p");
+        let img = document.createElement("img");
 
         // Set the content of the elements
-        h3.textContent = `${temple.templeName}`;
-        p1.textContent = `Location: `;
-        p2.textContent = `Dedicated: `;
-        p3.textContent = `area: `;
-        img.src = temple.imageUrl;
-        img.alt = `${temple.templeName} image`;
-
+        templeName.innerHTML = `${temple.templeName}`;
+        location.innerHTML = `Location: <span class="span-temple">${temple.location}</span>`;
+        dedicated.innerHTML = `Dedicated: <span class="span-temple">${temple.dedicated}</span>`;
+        area.innerHTML = `area: <span class="span-temple">${temple.area} sq ft</span>`;
+        img.setAttribute("src", temple.imageUrl);
+        img.setAttribute("alt", `${temple.templeName} Temple image`);
+        img.setAttribute("loadding", "lazy");
         // Append the temple details to the figcaption
-        figcaption.appendChild(h3);
-        figcaption.appendChild(p1);
-        figcaption.appendChild(p2);
-        figcaption.appendChild(p3);
-        p1.appendChild(span1);  // Add the span to the p1
-        p2.appendChild(span2);  // Add the span to the p2
-        p3.appendChild(span3);  // Add the span to the p3
-
-        span1.textContent = `${temple.location}`;
-        span2.textContent = `${temple.dedicated}`;
-        span3.textContent = `${temple.area} sq ft`;
-
-        //add class to p1 & figure
-        figure.classList.add('temple');
-        span1.classList.add('span-temple');  // Add class to the span
-        span2.classList.add('span-temple');  // Add class to the span
-        span3.classList.add('span-temple');  // Add class to the span
-
+        figcaption.appendChild(templeName);
+        figcaption.appendChild(location);
+        figcaption.appendChild(dedicated);
+        figcaption.appendChild(area);
         // Append the image and the figcaption to the figure
         figure.appendChild(figcaption);
         figure.appendChild(img);
-
+        //add class to p1 & figure
+        figure.classList.add('temple');
         // Finally, append the figure to the document 
         templeCards.appendChild(figure);
     });
 }
 
-// Call the displayResults function and pass the temples array
-displayResults(temples);
