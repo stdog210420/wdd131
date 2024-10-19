@@ -181,7 +181,6 @@ h6 {
     padding: 10px;
 }
 
-.secondary,
 .accent1,
 .accent2 {
     color: var(--nav-hover-background-color);
@@ -209,4 +208,33 @@ footer {
     background-color: var(--accent2-color);
     text-align: center;
     color: var(--nav-hover-background-color);
+}
+
+/* mobile view */
+@media screen and (max-width: 1023px) {
+    body {
+        font-size: 14px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    img {
+        align-self: center;
+        justify-items: center;
+    }
+
+    header,
+    .wireframe,
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wireframe img {
+        width: auto;
+        height: auto;
+        max-width: 90%;
+    }
+
+
 }
