@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form - Phoebe Lin - </title>
+    <meta name="description" content="Product Review Form">
+    <meta name="author" content="Phoebe Lin">
+    <link rel="stylesheet" href="styles/form.css">
+    <!-- <link rel="stylesheet" href="styles/form-large.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap&family=Lato:wght@300&family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <div class="formarea">
+            <form id="reviewForm" method="get" action="review.html" class="form">
+                <fieldset>
+                    <!-- <legend>Product Review</legend> -->
+                    <div class="border">
+                        <div>
+                            <label for="product">Product Name*</label>
+                            <select name="product" id="product" required>
+                                <option value="" disabled selected></option>
+                            </select>
+                        </div>
+                        <div>
+                            <label> Overall Rating</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star-a" name="stars" value="5"><label for="star-a"></label>
+                                <input type="radio" id="star-b" name="stars" value="4"><label for="star-b"></label>
+                                <input type="radio" id="star-c" name="stars" value="3"><label for="star-c"></label>
+                                <input type="radio" id="star-d" name="stars" value="2"><label for="star-d"></label>
+                                <input type="radio" id="star-e" name="stars" value="1"><label for="star-e"></label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="date">Date of Installation*</label><input type="date" name="date" id="date"
+                                required>
+                        </div>
+                        <div>
+                            <label for="types">Which features did you find useful in the product?(check all that apply)*
+                                <div id="feature">
+                                    <input type="checkbox" id="durability" name="feature" value="durability">
+                                    <label for="durability"> Durability</label><br>
+
+                                    <input type="checkbox" id="easeuse" name="feature" value="easeuse">
+                                    <label for="easeuse"> Ease of use</label><br>
+
+                                    <input type="checkbox" id="performance" name="feature" value="performance">
+                                    <label for="performance"> Performance</label><br>
+
+                                    <input type="checkbox" id="design" name="feature" value="design">
+                                    <label for="design"> Design</label><br>
+                                </div>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="review">Written Review <span>(Optional)<span> <textarea name="review"
+                                            id="review" rows="10" cols="100"
+                                            placeholder=" Anything you want to say."></textarea></label>
+                        </div>
+                        <div>
+                            <label for="name">Your Name<span>(Optional)</span></label><input type="text" name="name"
+                                id="name">
+                        </div>
+                    </div>
+                </fieldset>
+                <input class="submitButton" type="submit" value="Post Review">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p id="footer-name"><span>&copy;<span id="year"> </span> |</span><span> Phoeb Lin |</span><span> Tainan City,
+                Taiwan |</span></p>
+        <p id="lastModified">Last Modified</p>
+
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
+</body>
+
+</html>
