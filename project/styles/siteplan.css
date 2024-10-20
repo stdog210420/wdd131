@@ -56,44 +56,11 @@ header {
     justify-content: space-around;
     text-align: center;
     padding: 1rem;
-    border-width: 80%;
+    /* border-width: 80%; */
     border: 30px double var(--nav-hover-background-color);
     box-shadow: 2px 2px 5px #807c7c;
     margin-bottom: 5px;
     border-radius: 5px;
-}
-
-.navigation,
-.footer-link {
-    width: 100%;
-    font-size: 2rem;
-    font-weight: bolder;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    text-align: center;
-}
-
-
-.navigation a,
-.footer-link a {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    /* background-color: var(--nav-background-color); */
-    color: var(--nav-hover-link-color);
-}
-
-.navigation a:hover,
-.footer-link a:hover {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    /* background-color: var(--nav-hover-background-color); */
-    color: var(--nav-hover-background-color);
 }
 
 .logo {
@@ -103,11 +70,11 @@ header {
 
 main {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .hero {
-    grid-row: 1/2;
+    grid-column: 1/3;
     max-width: 60%;
     height: auto;
     margin: 10px;
@@ -118,12 +85,6 @@ main {
 .hero img {
     justify-content: center;
     align-items: center;
-}
-
-.product-cards {
-    grid-row: 2/3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
 }
 
 h1 {
