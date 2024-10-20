@@ -34,7 +34,7 @@ function createProducts(products) {
     products.forEach(product => {
         let option = document.createElement("option");
         option.value = product.id;
-        option.textContent = `${product.name} (Rating: ${product.averagerating})`;
+        option.textContent = `${product.name}`;
         productSelect.appendChild(option);
     });
 }

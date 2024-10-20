@@ -52,14 +52,12 @@ header {
     background-color: var(--accent1-color);
     color: var(--nav-background-color);
     padding: 5px;
-    width: 800px;
+    /* width: 800px; */
     border-radius: 5px;
 }
 
 main {
     grid-column: 2/3;
-    /* display: grid;
-    grid-template-columns: auto 1fr auto; */
     align-content: center;
     justify-items: center;
 }
@@ -82,7 +80,7 @@ fieldset {
     border: 1px solid var(--nav-hover-link-color);
     border-radius: 15px;
     line-height: 2.5rem;
-    max-width: 800px;
+    /* max-width: 800px; */
 
 }
 
@@ -120,7 +118,7 @@ input[type="checkbox"] {
 }
 
 .formarea textarea {
-    max-width: 700px;
+    /* max-width: 700px; */
     font-family: var(--paragraph-font);
     font-size: 1rem;
     border: none;
@@ -201,7 +199,7 @@ img {
     font-size: 3rem;
     margin: 0.5rem;
     color: gold;
-    width: 800px;
+    /* width: 800px; */
 }
 
 footer {
@@ -213,5 +211,41 @@ footer {
     padding: 5px;
     border: none;
     border-radius: 5px;
+}
+
+
+/* mobile view */
+@media screen and (max-width: 1023px) {
+    body {
+        font-size: 14px;
+        display: block;
+        margin: 0;
+        padding: 0;
+        align-content: center;
+        justify-items: center;
+    }
+
+    header,
+    footer,
+    .formarea,
+    .star-response,
+    .formarea textarea {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    header {
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        margin-top: 1rem;
+    }
+
+    .formarea textarea {
+        padding-left: 5px;
+    }
 
 }
