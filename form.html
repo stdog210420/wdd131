@@ -30,7 +30,9 @@
                     <div class="border">
                         <div>
                             <label for="product">Product Name*</label>
-                            <select name="product" id="product" required></select>
+                            <select name="product" id="product" required>
+                                <option value="" disabled selected>Choose a Product ...</option>
+                            </select>
                         </div>
                         <div>
                             <label> Overall Rating</label>
@@ -68,8 +70,8 @@
                                     placeholder=" Anything you want to say."></textarea></label>
                         </div>
                         <div>
-                            <label for="name">Your Name<span>(Optional)</span></label><input type="text" name="name"
-                                id="name">
+                            <label for="name">Your Name<span>(Optional)</span></label>
+                            <input type="text" name="name" id="name" autocomplete="name">
                         </div>
                     </div>
                 </fieldset>

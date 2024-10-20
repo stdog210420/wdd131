@@ -146,14 +146,14 @@ input[type="checkbox"] {
 
 img {
     max-width: 100%;
-    max-height: auto;
+    height: auto;
     border-radius: 15px;
 }
 
 .star-rating {
     display: flex;
     flex-direction: row-reverse;
-    align-items: left;
+    align-items: first baseline;
     justify-content: left;
     font-size: 2rem;
     /* adjust the star size */
