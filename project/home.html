@@ -17,47 +17,93 @@
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="images/logo2.webp" alt="Logo image" loading="lazy" width="250" height="125">
+    <header class="headerfix">
+        <div class="logo">
+            <a href="project/home.html"><img src="images/cat-logo.png" alt="Logo image" loading="lazy" width="250"
+                    height="125"></a>
+            <h1>Liliean & Friends' Shop</h1>
+        </div>
+
         <nav class="navigation">
-            <a href="project/home.html">Home</a>
-            <a href="project/home.html">Product</a>
-            <a href="project/member">Membership</a>
-            <a href="project/contact">Contact Us</a>
+            <a class="product-link" href="project/product.html"><img class="product-icon" src="images/sling-bag.webp"
+                    alt="Logo image" loading="lazy" width="512" height="512">Product</a>
+            <a class="event-link" href="project/event.html"><img class="event-icon" src="images/watch.png"
+                    alt="Logo image" loading="lazy" width="512" height="512">Event</a>
+            <a class="member-link" href="project/member"><img class="member-icon" src="images/medal.png"
+                    alt="Logo image" loading="lazy" width="512" height="512">Membership</a>
+            <a class="contact-link" href="project/contact"><img class="contact-icon" src="images/hat.png"
+                    alt="Logo image" loading="lazy" width="512" height="512">Contact Us</a>
         </nav>
     </header>
     <main>
         <div class="hero">
-            <img src="images/tote-bag2.jpg" alt="hero image" loading="lazy" width="1045" height="945">
-            <h1>Hot News</h1>
+            <div class="hero-box">
+                <img src="images/tote-bag2.webp" alt="hero image" loading="lazy" width="1045" height="945">
+            </div>
+            <section class="hero-msg">
+                <h2>Make Memory with Liliean & Friends</h2>
+                <h3>Find Treasure</h3>
+                <div class="news-button">
+                    <a class="book" href="contactus.html">Hot News</a>
+                </div>
+            </section>
         </div>
         <div class="product-cards">
             <figure class="bag">
-                <img src="images/bag1.webp" alt="bag" loading="lazy" width="1045" height="1567">
-                <figcaption>Bag</figcaption>
+                <a class="bag" href="product.html"><img src="images/bag1.webp" alt="bag" loading="lazy" width="1045"
+                        height="1567">
+                    <figcaption>Bag</figcaption>
+                </a>
             </figure>
-            <figure class="pillow">
-                <img src="images/pillow2.jpg" alt="pillow" loading="lazy" width="1045" height="1055">
-                <figcaption>Pillow</figcaption>
+            <figure class="wristlet">
+                <a class="wristlet" href="product.html">
+                    <img src="images/bag4.webp" alt="pillow" loading="lazy" width="1045" height="1055">
+                    <figcaption>wristlet</figcaption>
+                </a>
             </figure>
             <figure class="holder">
-                <img src="images/bag5.webp" alt="holder" loading="lazy" width="1045" height="1567">
-                <figcaption>Water Bottle Holder</figcaption>
+                <a class="holder" href="product.html"><img src="images/bag5.webp" alt="holder" loading="lazy"
+                        width="1045" height="1567">
+                    <figcaption>Water Bottle Holder</figcaption>
+                </a>
             </figure>
         </div>
         <div class="join">
-            <img src="images/unicorn1.jpg" alt="join image" loading="lazy" width="1024" height="1024">
-            <h2>Join Us</h2>
+            <div class="join-background"></div>
+            <img class="join-img" src="images/join2.jpg" alt="join image" loading="lazy" width="1024" height="1024">
+            <section class="join-area">
+                <a href="member.html">
+                    <h4 class='join-title'>Join Us</h4>
+                    <p>Welcome to our handmade craft store!
+                        Sign up for free to become a member and enjoy exclusive discounts, early access to new products,
+                        and updates on special events. Don't miss out—join us today!</p>
+                </a>
+            </section>
         </div>
-
     </main>
 
     <footer>
-        <div class="footer-link">
-            <a href="project/siteplan.html">siteplan</a>
-            <a href="project/contact.html">contact</a>
+        <div class="footer-logo">
+            <a href="project/home.html"><img src="images/cat-logo.png" alt="Logo image" loading="lazy" width="250"
+                    height="125"></a>
+            <h5>Liliean & Friends' Shop</h5>
         </div>
-        <p id="footer-name">Handcrafted Accessories<span>&copy;<span id="year"> </span> </p>
+        <div class="footer-area">
+            <a class="footer-link" href="project/siteplan.html">siteplan</a>
+            <a class="footer-link" href="project/contact.html">contact</a>
+            <p id="footer-name">Handcrafted Accessories<span>&copy;<span id="year"> </span> </p>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img src="images/facebook.webp" alt="fb icon" loading="lazy" width="64" height="64">
+            </a>
+            <a href="https://shopee.com">
+                <img src="images/shopee.webp" alt="twitter icon" loading="lazy" width="64" height="64">
+            </a>
+            <a href="https://pchome.com">
+                <img src="images/pchome.webp" alt="pchome icon" loading="lazy" width="64" height="64">
+            </a>
+        </div>
 
     </footer>
     <script src="scripts/getdates.js" defer></script>
