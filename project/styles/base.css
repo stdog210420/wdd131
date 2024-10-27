@@ -130,7 +130,7 @@ h1:hover {
     padding: 5px;
     text-decoration: none;
     /* background-color: var(--nav-background-color); */
-    color: #5c5751;
+    color: var(--primary-color);
 }
 
 .navigation a:hover,
@@ -147,7 +147,7 @@ h1 {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    color: #5c5751;
+    color: var(--primary-color);
 }
 
 main {
