@@ -463,17 +463,18 @@ footer a:hover {
         flex-direction: column;
     }
 
-    .join {
+    .join,
+    .join-area,
+    .join-link {
         display: block;
         align-items: center;
         justify-content: center;
     }
 
-
-    /* 
-    .join-area {
-        justify-items: center;
-    } */
+    .join-link {
+        max-width: 90%;
+        height: auto;
+    }
 
     .join-title {
         padding: 0.5rem;
