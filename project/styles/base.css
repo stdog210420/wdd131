@@ -405,6 +405,11 @@ footer {
     grid-row: 1/2;
     text-decoration: none;
     color: var(--accent1-color);
+
+}
+
+.footer-link {
+    display: flex;
     justify-content: baseline;
     align-items: flex-end;
 }
