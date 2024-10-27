@@ -1,3 +1,11 @@
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});
+
 // copyright year
 const currentYear = new Date().getFullYear();
 // Modify the content
@@ -12,4 +20,7 @@ const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: 'nume
 const formattedDate = lastModifiedDate.toLocaleDateString('en-US', options);
 
 // Update the placeholder text with the last modified date
+
 document.getElementById('lastModified').innerText = `Last Modified: ${formattedDate}`;
+
+
