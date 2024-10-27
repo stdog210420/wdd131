@@ -411,8 +411,9 @@ footer {
 .footer-link {
     display: flex;
     justify-content: baseline;
-    align-items: flex-end;
+    align-items: last baseline;
 }
+
 
 #footer-name {
     grid-column: 1/4;
