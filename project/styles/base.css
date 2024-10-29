@@ -700,6 +700,74 @@ th {
     color: var(--accent1-color);
 }
 
+.event-area {
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent1-color);
+}
+
+.calendar {
+    grid-row: 1/2;
+    margin: 0;
+    padding: 0;
+}
+
+.calendar img {
+    width: fit-content;
+    max-width: 100%;
+}
+
+/* .event {
+    border: 1px solid #807c7c;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+} */
+
+.event h2,
+.event h3,
+.event h4 {
+    margin-top: 20px;
+    color: var(--accent1-color)
+}
+
+.event h2 {
+    font-size: 2rem;
+}
+
+.event h4 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.event-section {
+    display: flex;
+    /* Use flexbox for the container */
+    justify-content: space-between;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.holidays {
+    margin: 10px;
+    /* Maintain aspect ratio */
+    border-radius: 5px;
+    transition: transform 0.2s;
+    /* Smooth hover effect */
+    border: 1px solid #807c7c;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
 /*************************************************/
 footer {
     /* background-color: #9D9791; */
@@ -800,9 +868,23 @@ footer a:hover {
     footer,
     .join-member,
     .formarea,
-    .contact-form {
+    .contact-form,
+    .event-section,
+    .product-area {
         display: flex;
         flex-direction: column;
+    }
+
+    .product-list,
+    .bag-cards {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .event-area {
+        margin-top: 120px;
     }
 
     .formarea,
