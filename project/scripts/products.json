@@ -98,7 +98,7 @@
     {
         "Id": 14,
         "Name": "Pink Tone Throw Pillow",
-        "category": "Pillow",
+        "category": "Others",
         "price": 800,
         "quantity": 1,
         "imageUrl": "https://stdog210420.github.io/wdd131/project/images/pillow1.webp"
@@ -106,7 +106,7 @@
     {
         "Id": 14,
         "Name": "Vibrant Color Throw Pillow",
-        "category": "Pillow",
+        "category": "Others",
         "price": 800,
         "quantity": 1,
         "imageUrl": "https://stdog210420.github.io/wdd131/project/images/pillow2.webp"
