@@ -378,14 +378,10 @@ figcaption {
     color: var(--accent1-color);
     margin-top: 200px;
     grid-column: 2/3;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
 }
 
 
 .contact-form {
-    display: flex;
-    flex-direction: row;
     color: var(--accent1-color);
     margin-top: 200px;
     justify-self: center;
@@ -722,14 +718,16 @@ th {
     max-width: 100%;
 }
 
-/* .event {
-    border: 1px solid #807c7c;
-    border-radius: 10px;
+.event p {
+    /* border: 1px solid #807c7c;
+    border-radius: 10px; */
     padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    text-align: left;
+    line-height: 1.5rem;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 
-} */
+}
 
 .event h2,
 .event h3,
@@ -962,6 +960,16 @@ footer a:hover {
         display: block;
         align-items: center;
         justify-content: center;
+    }
+
+    .join-member {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .table {
+        margin: 0 auto;
     }
 
     .join-link {
