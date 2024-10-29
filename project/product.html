@@ -38,9 +38,8 @@
     </header>
     <main>
         <!-- Product List -->
-        <section class="product-list">
-            <h2>Products</h2>
-            <select id="sortBy" title="Choose a data filter.">
+        <section class="product-area">
+            <select class="product-sort" title="Choose a data filter.">
                 <option value="" disabled selected>Select...</option>
                 <option value="handbag">Drawstring bag</option>
                 <option value="notHandbag">other</option>
@@ -49,25 +48,20 @@
             <h2 class="h2-title">Whole</h2>
             <div class="bag-cards">
             </div>
-            <section>
-                <nav class="product-list">
-                    <a href="#" class="whole">Whole</a>
-                    <div class="bag">
-                        <a href="#">Bag</a>
-                        <div class="bag-type">
-                            <a href="#">Wristlet</a>
-                            <a href="#">Shoulder bag</a>
-                            <a href="#">Drawstring bag</a>
-                            <a href="#">Tote bag</a>
-                        </div>
-                    </div>
-                    <div class="other">
-                        <a href="#">Other</a>
-                        <div class="bag-type">
-                            <a href="#">Pillow</a>
-                        </div>
-                    </div>
-                </nav>
+            <section class="product-list">
+                <h3>Category</h3>
+                <a class="whole" href="#" class="whole">Whole</a>
+                <a class="bags" href="#">Bag</a>
+                <ul>
+                    <li class="bag-type"><a href="#">Wristlet</a></li>
+                    <li class="bag-type"><a href="#">Shoulder bag</a></li>
+                    <li class="bag-type"><a href="#">Drawstring bag</a></li>
+                    <li class="bag-type"><a href="#">Tote bag</a></li>
+                </ul>
+
+                <a class="other" href="#">Other</a>
+                <a class="bag-type" href="#">Pillow</a>
+
             </section>
 
             <!-- Shopping Cart -->

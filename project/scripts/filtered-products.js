@@ -3,10 +3,7 @@ const h2title = document.querySelector('.h2-title');
 
 
 // Call the displayResults function and pass the temples array
-createBagleCard(bags);
-
-
-
+createBagCard(bags);
 
 //Home - displays all the temples stored in the array.
 let homeLink = document.querySelector("#home");
@@ -51,45 +48,49 @@ function createBagCard(filteredBags) {
         let figure = document.createElement("figure");
         // Create elements for each templeCards
         let figcaption = document.createElement("figcaption");
-        let bagName = document.createElement("h3");
-        let location = document.createElement("p");
-        let dedicated = document.createElement("p");
-        let area = document.createElement("p");
+        let bagName = document.createElement("h4");
+        let category = document.createElement("p");
+        let price = document.createElement("p");
+        let amount = document.createElement("p");
         let img = document.createElement("img");
 
         // Set the content of the elements
         bagName.innerHTML = `${bag.productName}`;
-        location.innerHTML = `Location: <span class="span-temple">${bag.location}</span>`;
-        dedicated.innerHTML = `Dedicated: <span class="span-temple">${bag.dedicated}</span>`;
-        area.innerHTML = `area: <span class="span-temple">${bag.area} sq ft</span>`;
+        category.innerHTML = `Location: <span class="span-temple">${bag.category}</span>`;
+        price.innerHTML = `price:$ <span class="span-temple">${bag.price}</span>`;
+        amount.innerHTML = `Dedicated: <span class="span-temple">${bag.quantity}</span>`;
         img.setAttribute("src", bag.imageUrl);
-        img.setAttribute("alt", `${bag.bagName} Temple image`);
+        img.setAttribute("alt", `${bag.Name} Bags image`);
         img.setAttribute("loadding", "lazy");
         // Append the temple details to the figcaption
         figcaption.appendChild(bagName);
-        figcaption.appendChild(location);
-        figcaption.appendChild(dedicated);
-        figcaption.appendChild(area);
+        figcaption.appendChild(category);
+        figcaption.appendChild(price);
+        figcaption.appendChild(amount);
         // Append the image and the figcaption to the figure
         figure.appendChild(figcaption);
         figure.appendChild(img);
         //add class to p1 & figure
-        figure.classList.add('bag');
+        figure.classList.add('bags');
         // Finally, append the figure to the document 
         templeCards.appendChild(figure);
     });
-}
-
-/* async getProducts Function using fetch()*/
-let productList = [];
-//Create another function expression called getProducts. Make it an async anonymous, arrow function.
-const getProducts = async () => {
-    const response = await fetch("https://stdog210420.github.io/project/scripts/products.json");
-    if (response.ok) {
-        productList = await response.json();
-        displayProducts(productList);
-        console.log(productList)
+    const url = "https://stdog210420.github.io/project/scripts/products.json"
+    async function getProducts() {
+        try {
+            const response = await fetch(url);
+            if (response.ok) {
+                const data = await response.json();
+                // console.log(data);
+                displayResults(data);
+            }
+            else {
+                throw Error(await response.text());
+            }
+        }
+        catch (error) {
+            console.log(error);
+        }
     }
+    getProducts();
 }
-
-getProducts();

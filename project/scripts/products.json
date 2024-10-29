@@ -1,34 +1,114 @@
 [
     {
-        "productId": 1,
-        "productName": "貝殼花束口小提袋(紫羅蘭)",
-        "class":"束口提袋",
+        "Id": 1,
+        "Name": "Violet Shell Bouquet Mini Tote Bag",
+        "category": "drawstring",
         "price": 800,
         "quantity": 5,
-        "imageUrl": "https://stdog210420.github.io/best_sale/images/bag1.jpg"
+        "imageUrl": "https://stdog210420.github.io/project/images/bag1.webp"
     },
     {
-        "productId": 2,
-        "productName": "貝殼花束口小提袋(櫻花粉)",
-        "class":"束口提袋",
+        "Id": 2,
+        "Name": "Cherry Blossom Pink Shell Bouquet Mini Tote Bag",
+        "category": "drawstring",
         "price": 800,
         "quantity": 10,
-        "imageUrl": "https://stdog210420.github.io/best_sale/images/bag3.jpg"
+        "imageUrl": "https://stdog210420.github.io/project/images/bag3.webp"
     },
     {
-        "productId": 3,
-        "productName": "貝殼花手機袋(櫻花粉)",
-        "class":"手機袋",
+        "Id": 3,
+        "Name": "Cherry Blossom Pink Shell Flower Phone Pouch",
+        "category": "Mini Bag",
         "price": 800,
         "quantity": 2,
-        "imageUrl": "https://stdog210420.github.io/best_sale/images/bag4.jpg"
+        "imageUrl": "https://stdog210420.github.io/project/images/bag4.webp"
     },
     {
-        "productId": 4,
-        "productName": "貝殼花水壺提袋(天空藍)",
-        "class":"水壺提袋",
-        "price": 800, 
+        "Id": 4,
+        "Name": "Sky Blue Shell Flower Water Bottle Tote Bag",
+        "category": "Mini Bag",
+        "price": 800,
         "quantity": 1,
-        "imageUrl": "https://stdog210420.github.io/best_sale/images/bag5.jpg"
-        }
+        "imageUrl": "https://stdog210420.github.io/project/images/bag5.webp"
+    },
+    {
+        "Id": 5,
+        "Name": "Floral Paradise Pearl Mini Shoulder Bag",
+        "category": "Mini Bag",
+        "price": 800,
+        "quantity": 1,
+        "imageUrl": "https://stdog210420.github.io/project/images/drawstring-bag.webp"
+    },
+    {
+        "Id": 6,
+        "Name": "Peach Pink Ombre Rose Shoulder Bag",
+        "category": "Mini Bag",
+        "price": 800,
+        "quantity": 1,
+        "imageUrl": "https://stdog210420.github.io/project/images/corsage.webp"
+    },
+    {
+        "Id": 7,
+        "Name": "Green Geometric Pearl Mini Shoulder Bag",
+        "category": "Mini Bag",
+        "price": 800,
+        "quantity": 1,
+        "imageUrl": "https://stdog210420.github.io/project/images/shoulder-bag1.webp"
+    },
+    {
+        "Id": 8,
+        "Name": "Pink Geometric Pearl Mini Shoulder Bag",
+        "category": "Mini Bag",
+        "price": 800,
+        "quantity": 1,
+        "imageUrl": "https://stdog210420.github.io/project/images/shoulder-bag2.webp"
+    },
+    {
+        "Id": 9,
+        "Name": "Floral Burst Tote Bag",
+        "category": "Tote Bag",
+        "price": 800,
+        "quantity": 1,
+        "imageUrl": "https://stdog210420.github.io/project/images/tote-bag1.webp"
+    },
+    {
+        "Id": 8,
+        "Name": "Floral Burst Shoulder Bag",
+        "category": "Tote Bag",
+        "price": 800,
+        "quantity": 1,
+        "imageUrl": "https://stdog210420.github.io/project/images/tote-bag3.webp"
+    },
+    {
+        "Id": 7,
+        "Name": "Floral Burst Shoulder Bag2",
+        "category": "Tote Bag",
+        "price": 800,
+        "quantity": 1,
+        "imageUrl": "https://stdog210420.github.io/project/images/tote-bag4.webp"
+    },
+    {
+        "Id": 8,
+        "Name": "Large Rose Bouquet Surround Shoulder Bag",
+        "category": "Tote Bag",
+        "price": 800,
+        "quantity": 1,
+        "imageUrl": "https://stdog210420.github.io/project/images/tote-bag5.webp"
+    },
+    {
+        "Id": 8,
+        "Name": "Pink Tone Throw Pillow",
+        "category": "Pillow",
+        "price": 800,
+        "quantity": 1,
+        "imageUrl": "https://stdog210420.github.io/project/images/pillow1.webp"
+    },
+    {
+        "Id": 8,
+        "Name": "Vibrant Color Throw Pillow",
+        "category": "Pillow",
+        "price": 800,
+        "quantity": 1,
+        "imageUrl": "https://stdog210420.github.io/project/images/pillow2.webp"
+    }
 ]
