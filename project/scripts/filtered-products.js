@@ -48,11 +48,22 @@ toteLink.addEventListener("click", () => {
     h2title.innerHTML = "Tote Bag";
 })
 
+let bagsLink = document.querySelector(".bags-type");
+bagsLink.addEventListener("click", () => {
+    creatProductCard(products.filter(product => product.type == "Bag"));
+    h2title.innerHTML = "Bags";
+})
 
 let othersLink = document.querySelector(".others");
 othersLink.addEventListener("click", () => {
-    creatProductCard(products.filter(product => product.category == "Others"));
+    creatProductCard(products.filter(product => product.type == "Others"));
     h2title.innerHTML = "Others";
+})
+
+let pillowLink = document.querySelector("#pillow");
+pillowLink.addEventListener("click", () => {
+    creatProductCard(products.filter(product => product.category == "Pillow"));
+    h2title.innerHTML = "Pillow";
 })
 
 
