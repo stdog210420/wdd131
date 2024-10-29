@@ -1,46 +1,6 @@
 const productCards = document.querySelector('.bag-cards');
 const h2title = document.querySelector('.h2-title');
 
-
-// Call the displayResults function and pass the temples array
-createBagCard(bags);
-
-//Home - displays all the temples stored in the array.
-let homeLink = document.querySelector("#home");
-homeLink.addEventListener("click", () => {
-    createBagCard(bags);
-    h2title.innerHTML = "Home";
-})
-
-//Old - temples built before 1900
-let oldLink = document.querySelector("#old");
-oldLink.addEventListener("click", () => {
-    createBagsCard(bags.filter(bag => new Date(bag.dedicated).getFullYear() < 1990));
-    h2title.innerHTML = "Old Temples";
-})
-
-//New - temples built after 2000
-let newLink = document.querySelector("#new");
-newLink.addEventListener("click", () => {
-    createBagCard(temples.filter(temple => new Date(bag.dedicated).getFullYear() > 2000));
-    h2title.innerHTML = "New Temples";
-})
-
-//Large - temples larger than 90000 square feet
-let largeLink = document.querySelector("#large");
-largeLink.addEventListener("click", () => {
-    createBagCard(temples.filter(bag => bag.area > 90000));
-    h2title.innerHTML = "Large Temples";
-})
-
-//Small - temples smaller than 10000 square feet
-let smallLink = document.querySelector("#small");
-smallLink.addEventListener("click", () => {
-    createBagCard(temples.filter(temple => temple.area < 10000));
-    h2title.innerHTML = "Small Temples";
-})
-
-
 function creatProductCard(filteredProducts) {
     productCards.innerHTML = "";
     filteredProducts.forEach(product => {
@@ -77,10 +37,9 @@ function creatProductCard(filteredProducts) {
     });
 }
 
-const url = "https://stdog210420.github.io/project/scripts/products.json";
 let products = [];
 const getProducts = async () => {
-    const response = await fetch(url);
+    const response = await fetch("https://stdog210420.github.io/project/scripts/products.json");
     if (response.ok) {
         productList = await response.json();
         displayProducts(products);
