@@ -601,61 +601,14 @@ th {
     margin-bottom: 50px;
 }
 
-.bag-cards {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin-top: 120px;
-    align-items: center;
-    justify-content: baseline;
-}
-
-.bag-cards h4 {
-    color: var(--accent1-color);
-    font-size: 1rem;
-}
-
-.bag-cards p {
-    color: var(--accent1-color);
-    font-size: 1rem;
-}
-
-.products {
-    display: block;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--nav-background-color);
-    margin: 2rem;
-    /* border: 5px solid rgba(103, 102, 102, 0.1); */
-}
-
-
-.products img {
-    border: 3px double var(--nav-hover-background-color);
-    box-shadow: 2px 2px 5px #807c7c;
-    margin: 2rem;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: white;
-}
-
 .product-area {
     margin-top: 200px;
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
-
+    grid-template-rows: auto 1fr auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
 }
-
-.product-sort {
-    grid-column: 1/3;
-    grid-row: 1/2;
-    margin: 20px auto;
-    width: fit-content;
-    padding: 5px;
-    border-radius: 15px;
-}
-
 
 
 .product-list {
@@ -681,6 +634,65 @@ th {
 
 }
 
+.bag-cards {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.bag-cards h4 {
+    color: var(--accent1-color);
+    font-size: 1rem;
+}
+
+.bag-cards p {
+    color: var(--accent1-color);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.products {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--nav-background-color);
+    margin: 2rem;
+    /* border: 5px solid rgba(103, 102, 102, 0.1); */
+}
+
+
+.products img {
+    border: 3px double var(--nav-hover-background-color);
+    box-shadow: 2px 2px 5px #807c7c;
+    margin: 2rem;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+.product-sort {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin: 20px auto;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#cart {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#cart h5 {
+    font-size: 1.5rem;
+}
 
 /*************************************************/
 footer {
