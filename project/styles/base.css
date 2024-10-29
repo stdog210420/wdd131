@@ -603,11 +603,7 @@ th {
 
 .product-area {
     margin-top: 120px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr auto;
-    column-gap: 1rem;
-    row-gap: 1rem;
+
 }
 
 
@@ -875,17 +871,27 @@ footer a:hover {
     .formarea,
     .contact-form,
     .event-section,
-    .product-area {
+    .product-area,
+    .bag-cards {
         display: flex;
         flex-direction: column;
     }
 
-    .product-list,
+    .product-list {
+        align-items: center;
+        justify-content: center;
+    }
+
     .bag-cards {
         margin: 0;
         padding: 0;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
+    }
+
+    .bag-cards img {
+        width: 80%;
+        height: auto;
     }
 
     .event-area {
