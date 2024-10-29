@@ -1,4 +1,4 @@
-const bagCards = document.querySelector('.bag-cards');
+const productCards = document.querySelector('.bag-cards');
 const h2title = document.querySelector('.h2-title');
 
 
@@ -41,9 +41,9 @@ smallLink.addEventListener("click", () => {
 })
 
 
-function createBagCard(filteredBags) {
-    bagCards.innerHTML = "";
-    filteredBags.forEach(bag => {
+function creatProductCard(filteredProducts) {
+    productCards.innerHTML = "";
+    filteredProducts.forEach(product => {
         // Create a figure element for each temple
         let figure = document.createElement("figure");
         // Create elements for each templeCards
@@ -55,15 +55,15 @@ function createBagCard(filteredBags) {
         let img = document.createElement("img");
 
         // Set the content of the elements
-        bagName.innerHTML = `${bag.productName}`;
-        category.innerHTML = `Location: <span class="span-temple">${bag.category}</span>`;
-        price.innerHTML = `price:$ <span class="span-temple">${bag.price}</span>`;
-        amount.innerHTML = `Dedicated: <span class="span-temple">${bag.quantity}</span>`;
-        img.setAttribute("src", bag.imageUrl);
-        img.setAttribute("alt", `${bag.Name} Bags image`);
+        productName.innerHTML = `${product.productName}`;
+        category.innerHTML = `Location: <span class="span-temple">${product.category}</span>`;
+        price.innerHTML = `price:$ <span class="span-temple">${product.price}</span>`;
+        amount.innerHTML = `Dedicated: <span class="span-temple">${product.quantity}</span>`;
+        img.setAttribute("src", product.imageUrl);
+        img.setAttribute("alt", `${product.Name} Bags image`);
         img.setAttribute("loadding", "lazy");
         // Append the temple details to the figcaption
-        figcaption.appendChild(bagName);
+        figcaption.appendChild(productName);
         figcaption.appendChild(category);
         figcaption.appendChild(price);
         figcaption.appendChild(amount);
@@ -73,24 +73,17 @@ function createBagCard(filteredBags) {
         //add class to p1 & figure
         figure.classList.add('bags');
         // Finally, append the figure to the document 
-        templeCards.appendChild(figure);
+        productCards.appendChild(figure);
     });
-    const url = "https://stdog210420.github.io/project/scripts/products.json"
-    async function getProducts() {
-        try {
-            const response = await fetch(url);
-            if (response.ok) {
-                const data = await response.json();
-                // console.log(data);
-                displayResults(data);
-            }
-            else {
-                throw Error(await response.text());
-            }
-        }
-        catch (error) {
-            console.log(error);
-        }
+}
+
+const url = "https://stdog210420.github.io/project/scripts/products.json";
+let products = [];
+const getProducts = async () => {
+    const response = await fetch(url);
+    if (response.ok) {
+        productList = await response.json();
+        displayProducts(products);
+        console.log(products)
     }
-    getProducts();
 }

@@ -669,6 +669,9 @@ th {
 .product-list a {
     text-decoration: none;
     color: var(--accent1-color);
+    font-weight: 700;
+    display: block;
+
 }
 
 
