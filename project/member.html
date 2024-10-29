@@ -34,11 +34,119 @@
             <a class="contact-link" href="contact.html"><img class="contact-icon" src="images/hat.webp" alt="Logo image"
                     loading="lazy" width="512" height="512">Contact Us</a>
         </nav>
+        <button id="menu"></button>
     </header>
     <main>
-
-
-
+        <div class="join-member">
+            <div class="benefits">
+                <table class="table">
+                    <caption>🌸Membership Level🌸</caption>
+                    <thead>
+                        <!-- <tr>
+                            <th class="card-msg" colspan="6" scope="colgroup">Max Rental Pricing</th>
+                        </tr> -->
+                        <tr>
+                            <th class="card-msg">Membership Level</th>
+                            <th class="card-msg">NP Membership</th>
+                            <th class="card-msg">Bronze Membership</th>
+                            <th class="card-msg">Silver Membership</th>
+                            <th class="card-msg">Gold Membership</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="card-msg2">Cumulative Spending</td>
+                            <td class="title">No minimum</td>
+                            <td class="title">Over $5,000</td>
+                            <td class="title">Over $15,000</td>
+                            <td class="title">Over $30,000</td>
+                        </tr>
+                        <tr>
+                            <td class="card-msg2">Shopping Discount</td>
+                            <td class="title">None</td>
+                            <td class="title">5% off</td>
+                            <td class="title">10% off</td>
+                            <td class="title">15% off</td>
+                        </tr>
+                        <tr>
+                            <td class="card-msg2">Birthday Gift</td>
+                            <td class="title">None</td>
+                            <td class="title">Yes</td>
+                            <td class="title">Yes</td>
+                            <td class="title">Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="card-msg2">Exclusive Discount Events</td>
+                            <td class="title">None</td>
+                            <td class="title">Yes</td>
+                            <td class="title">Yes</td>
+                            <td class="title">Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="card-msg2">Member Day Discount</td>
+                            <td class="title">None</td>
+                            <td class="title">Yes</td>
+                            <td class="title">Yes</td>
+                            <td class="title">Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="card-msg2">Free Shipping Threshold</td>
+                            <td class="title">$2,000</td>
+                            <td class="title">$1,500</td>
+                            <td class="title">$1,000</td>
+                            <td class="title">Free</td>
+                        </tr>
+                        <tr>
+                            <td class="card-msg2">Dedicated Customer Support</td>
+                            <td class="title">None</td>
+                            <td class="title">None</td>
+                            <td class="title">Yes</td>
+                            <td class="title">Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="membership">
+                    <h2 class="level-title">Joining the Membership Program</h2>
+                    <ul>
+                        <li>Joining is free, with NP Membership available to all members.</li>
+                        <li>Membership levels increase with cumulative spending, offering more benefits as you spend
+                            more.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="formarea">
+                <form method="get" action="thankyou.html" class="form">
+                    <fieldset>
+                        <legend>Application Information</legend>
+                        <label for="fname">First Name*</label><input type="text" name="fname" id="fname" required>
+                        <label for="lname">Last Name* </label><input type="text" name="lname" id="lname" required>
+                        <label for="email">Email*</label><input type="email" name="email" id="email" required
+                            placeholder="xxx1234@byui.edu" title="❗Please enter yout email address.">
+                        <label for="phone">Phone</label><input type="tel" name="phone" id="phone"
+                            placeholder="+886-1234-5678" required>
+                        <label for="country">Home state or country*</label>
+                        <select name="country" id="country" required>
+                            <option value="" disabled selected>Select the country</option>
+                        </select>
+                        <label for="address">Address*</label>
+                        <input type="text" name="address" id="address" pattern="[a-zA-Z0-9\s,.-]{7,}" required
+                            placeholder="Please enter a valid address (at least 7 characters)."
+                            title="Please enter at least seven characters with letters, numbers, and common punctuation such as ,.-">
+                        <label for="membership">Membership Level
+                            <select name="membership" required>
+                                <option value="" disabled selected>Select Membership Level</option>
+                                <option value="np">NP Membership</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+                        <input type="hidden" name="timestamp" id="timestamp">
+                    </fieldset>
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-logo">
@@ -47,9 +155,8 @@
             <h5>Liliean & Friends' Shop</h5>
         </div>
         <div class="footer-area">
-            <a class="footer-link" href="siteplan.html">siteplan</a>
-            <a class="footer-link" href="contact.html">contact</a>
-            <p id="footer-name">Handcrafted Accessories<span>&copy;</span><span id="year"> </span> </p>
+            <a class="footer-link" href="siteplan.html">Siteplan</a>
+            <a class="footer-link" href="contact.html">Contact</a>
         </div>
         <div class="social">
             <a href="https://facebook.com">
@@ -62,10 +169,11 @@
                 <img src="images/pchome.webp" alt="pchome icon" loading="lazy" width="177" height="75">
             </a>
         </div>
-
+        <p id="footer-name">Handcrafted Accessories<span>&copy;</span><span id="year"> </span> </p>
     </footer>
     <script src="scripts/getdates.js" defer></script>
-
+    <script src="scripts/hambutton.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 </body>
 
 </html>

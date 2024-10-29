@@ -29,15 +29,60 @@
                     alt="Logo image" loading="lazy" width="512" height="512">Product</a>
             <a class="event-link" href="event.html"><img class="event-icon" src="images/watch.webp" alt="Logo image"
                     loading="lazy" width="512" height="512">Event</a>
-            <a class="member-link" href="member"><img class="member-icon" src="images/medal.webp" alt="Logo image"
+            <a class="member-link" href="member.html"><img class="member-icon" src="images/medal.webp" alt="Logo image"
                     loading="lazy" width="512" height="512">Membership</a>
-            <a class="contact-link" href="contact"><img class="contact-icon" src="images/hat.webp" alt="Logo image"
+            <a class="contact-link" href="contact.html"><img class="contact-icon" src="images/hat.webp" alt="Logo image"
                     loading="lazy" width="512" height="512">Contact Us</a>
         </nav>
+        <button id="menu"></button>
     </header>
     <main>
+        <!-- Product List -->
+        <section class="product-list">
+            <h2>Products</h2>
+            <select id="sortBy" title="Choose a data filter.">
+                <option value="" disabled selected>Select...</option>
+                <option value="handbag">Drawstring bag</option>
+                <option value="notHandbag">other</option>
+                <option value="all">all</option>
+            </select>
+            <h2 class="h2-title">Whole</h2>
+            <div class="bag-cards">
+            </div>
+            <section>
+                <nav class="product-list">
+                    <a href="#" class="whole">Whole</a>
+                    <div class="bag">
+                        <a href="#">Bag</a>
+                        <div class="bag-type">
+                            <a href="#">Wristlet</a>
+                            <a href="#">Shoulder bag</a>
+                            <a href="#">Drawstring bag</a>
+                            <a href="#">Tote bag</a>
+                        </div>
+                    </div>
+                    <div class="other">
+                        <a href="#">Other</a>
+                        <div class="bag-type">
+                            <a href="#">Pillow</a>
+                        </div>
+                    </div>
+                </nav>
+            </section>
 
-
+            <!-- Shopping Cart -->
+            <div id="cart">
+                <h2>Shopping Cart</h2>
+                <ul id="cart-items">
+                    <!-- 購物車商品將顯示在這裡 -->
+                </ul>
+                <p id="quantity">Sum: 0</p>
+                <p id="total">Total: $0</p>
+            </div>
+            <div>
+                <button id="clearCart">Clear</button>
+            </div>
+        </section>
 
     </main>
     <footer>
@@ -47,9 +92,8 @@
             <h5>Liliean & Friends' Shop</h5>
         </div>
         <div class="footer-area">
-            <a class="footer-link" href="siteplan.html">siteplan</a>
-            <a class="footer-link" href="contact.html">contact</a>
-            <p id="footer-name">Handcrafted Accessories<span>&copy;</span><span id="year"> </span> </p>
+            <a class="footer-link" href="siteplan.html">Siteplan</a>
+            <a class="footer-link" href="contact.html">Contact</a>
         </div>
         <div class="social">
             <a href="https://facebook.com">
@@ -62,10 +106,11 @@
                 <img src="images/pchome.webp" alt="pchome icon" loading="lazy" width="177" height="75">
             </a>
         </div>
-
+        <p id="footer-name">Handcrafted Accessories<span>&copy;</span><span id="year"> </span> </p>
     </footer>
     <script src="scripts/getdates.js" defer></script>
-
+    <script src="scripts/hambutton.js" defer></script>
+    <script src="scripts/filtered-products.js" defer></script>
 </body>
 
 </html>
