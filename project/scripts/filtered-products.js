@@ -39,7 +39,7 @@ function creatProductCard(filteredProducts) {
 
 let products = [];
 const getProducts = async () => {
-    const response = await fetch("https://stdog210420.github.io/project/scripts/products.json");
+    const response = await fetch("https://stdog210420.github.io/wdd131/project/scripts/products.json");
     if (response.ok) {
         productList = await response.json();
         displayProducts(products);
