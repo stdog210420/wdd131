@@ -36,6 +36,24 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .bag-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .products {
+        height: 420px;
+    }
+
+    .products img {
+        width: 100%;
+        height: auto;
+        max-width: 340px;
+    }
+
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

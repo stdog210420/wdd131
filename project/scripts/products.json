@@ -33,38 +33,6 @@
     },
     {
         "Id": 5,
-        "Name": "Floral Paradise Pearl Mini Shoulder Bag",
-        "category": "Mini Bag",
-        "price": 800,
-        "quantity": 1,
-        "imageUrl": "https://stdog210420.github.io/wdd131/project/images/drawstring-bag.webp"
-    },
-    {
-        "Id": 6,
-        "Name": "Peach Pink Ombre Rose Shoulder Bag",
-        "category": "Mini Bag",
-        "price": 800,
-        "quantity": 1,
-        "imageUrl": "https://stdog210420.github.io/wdd131/project/images/corsage.webp"
-    },
-    {
-        "Id": 7,
-        "Name": "Green Geometric Pearl Mini Shoulder Bag",
-        "category": "Mini Bag",
-        "price": 800,
-        "quantity": 1,
-        "imageUrl": "https://stdog210420.github.io/wdd131/project/images/shoulder-bag1.webp"
-    },
-    {
-        "Id": 8,
-        "Name": "Pink Geometric Pearl Mini Shoulder Bag",
-        "category": "Mini Bag",
-        "price": 800,
-        "quantity": 1,
-        "imageUrl": "https://stdog210420.github.io/wdd131/project/images/shoulder-bag2.webp"
-    },
-    {
-        "Id": 9,
         "Name": "Floral Burst Tote Bag",
         "category": "Tote Bag",
         "price": 800,
@@ -72,7 +40,7 @@
         "imageUrl": "https://stdog210420.github.io/wdd131/project/images/tote-bag1.webp"
     },
     {
-        "Id": 8,
+        "Id": 6,
         "Name": "Floral Burst Shoulder Bag",
         "category": "Tote Bag",
         "price": 800,
@@ -89,6 +57,38 @@
     },
     {
         "Id": 8,
+        "Name": "Floral Paradise Pearl Mini Shoulder Bag",
+        "category": "Mini Bag",
+        "price": 800,
+        "quantity": 1,
+        "imageUrl": "https://stdog210420.github.io/wdd131/project/images/drawstring-bag.webp"
+    },
+    {
+        "Id": 9,
+        "Name": "Peach Pink Ombre Rose Shoulder Bag",
+        "category": "Mini Bag",
+        "price": 800,
+        "quantity": 1,
+        "imageUrl": "https://stdog210420.github.io/wdd131/project/images/corsage.webp"
+    },
+    {
+        "Id": 10,
+        "Name": "Green Geometric Pearl Mini Shoulder Bag",
+        "category": "Mini Bag",
+        "price": 800,
+        "quantity": 1,
+        "imageUrl": "https://stdog210420.github.io/wdd131/project/images/shoulder-bag1.webp"
+    },
+    {
+        "Id": 11,
+        "Name": "Pink Geometric Pearl Mini Shoulder Bag",
+        "category": "Mini Bag",
+        "price": 800,
+        "quantity": 1,
+        "imageUrl": "https://stdog210420.github.io/wdd131/project/images/shoulder-bag2.webp"
+    },
+    {
+        "Id": 12,
         "Name": "Large Rose Bouquet Surround Shoulder Bag",
         "category": "Tote Bag",
         "price": 800,
@@ -96,7 +96,7 @@
         "imageUrl": "https://stdog210420.github.io/wdd131/project/images/tote-bag5.webp"
     },
     {
-        "Id": 8,
+        "Id": 14,
         "Name": "Pink Tone Throw Pillow",
         "category": "Pillow",
         "price": 800,
@@ -104,7 +104,7 @@
         "imageUrl": "https://stdog210420.github.io/wdd131/project/images/pillow1.webp"
     },
     {
-        "Id": 8,
+        "Id": 14,
         "Name": "Vibrant Color Throw Pillow",
         "category": "Pillow",
         "price": 800,

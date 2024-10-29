@@ -7,12 +7,15 @@ const getProducts = async () => {
     const response = await fetch("https://stdog210420.github.io/wdd131/project/scripts/products.json");
     if (response.ok) {
         products = await response.json();
-        displayProducts(products);
+        creatProductCard(products);
         console.log(products)
     }
 }
 getProducts();
-creatProductCard(products);
+
+
+
+
 
 function creatProductCard(filteredProducts) {
     productCards.innerHTML = "";
@@ -29,22 +32,22 @@ function creatProductCard(filteredProducts) {
 
         // Set the content of the elements
         productName.innerHTML = `${product.Name}`;
-        category.innerHTML = `Location: <span class="span-temple">${product.category}</span>`;
-        price.innerHTML = `price:$ <span class="span-temple">${product.price}</span>`;
-        amount.innerHTML = `Dedicated: <span class="span-temple">${product.quantity}</span>`;
+        category.innerHTML = `Category: <span class="span-temple">${product.category}</span>`;
+        price.innerHTML = `Price:$ <span class="span-temple">${product.price}</span>`;
+        amount.innerHTML = `Quantity: <span class="span-temple">${product.quantity}</span>`;
         img.setAttribute("src", product.imageUrl);
         img.setAttribute("alt", `${product.Name} Bags image`);
-        img.setAttribute("loading", "lazy");
+        img.setAttribute("loading", "lazy", width = "1045", height = "1420");
         // Append the temple details to the figcaption
         figcaption.appendChild(productName);
         figcaption.appendChild(category);
         figcaption.appendChild(price);
         figcaption.appendChild(amount);
         // Append the image and the figcaption to the figure
-        figure.appendChild(figcaption);
         figure.appendChild(img);
+        figure.appendChild(figcaption);
         //add class to p1 & figure
-        figure.classList.add('bags');
+        figure.classList.add('products');
         // Finally, append the figure to the document 
         productCards.appendChild(figure);
     });
