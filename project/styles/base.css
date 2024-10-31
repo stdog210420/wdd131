@@ -409,15 +409,18 @@ figcaption {
 }
 
 .benefits {
-    margin-left: 20px;
-    grid-column: 1/2;
-    width: 100%;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .table {
     grid-column: 2/3;
-    padding: 10px 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
     /* box-shadow: 0 0 10px var(--secondary-color); */
     /* border: thin solid var(--accent2-color); */
     /* box-shadow: 0 0 10px var(--accent2-color); */
@@ -425,11 +428,11 @@ figcaption {
     /* border-radius: 15px; */
 }
 
-caption {
+.table caption {
     padding: 10px;
     margin-bottom: 10px;
     caption-side: top;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
     color: var(--accent1-color);
@@ -437,8 +440,9 @@ caption {
 
 th,
 td {
-    padding: 7px 15px;
+    padding: 10px;
     border: 1px solid #c0bfbf;
+    text-align: center;
     /* border-radius: 15px; */
 }
 
@@ -875,6 +879,30 @@ footer a:hover {
         flex-direction: column;
     }
 
+    .contact-form,
+    .formarea2 {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formarea2 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infro {
+        margin: 0 20px;
+        padding: 0 20px;
+    }
+
+    .formarea2 iframe {
+        width: 95%;
+        height: auto;
+
+    }
+
     .product-list {
         align-items: center;
         justify-content: center;
@@ -900,7 +928,14 @@ footer a:hover {
     .formarea2 {
         display: block;
         margin: 0;
-        padding: 0;
+        padding: 5px;
+    }
+
+    .benefits {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 0 20px;
     }
 
     .formarea2 {
@@ -918,25 +953,23 @@ footer a:hover {
         font-size: 1.5rem;
     }
 
-    .table {
-        padding: 5px 0;
-    }
 
-    caption {
-        font-size: 1.5rem;
-        /* 減小字體大小 */
-    }
-
-    th,
-    td {
+    /* Responsive styling for smaller cells */
+    .table th,
+    .table td {
+        align-self: baseline;
+        justify-content: center;
+        text-align: center;
+        text-wrap: wrap;
+        margin: 0 5px;
         padding: 5px;
-        /* 減小內邊距 */
-        font-size: 0.9rem;
-        /* 減小字體大小 */
+        font-size: 0.9em;
     }
 
-    .title {
-        font-size: 1rem;
+    .title,
+    .card-msg,
+    .card-msg2 {
+        font-size: 0.5rem;
         /* 減小字體大小 */
     }
 
@@ -963,14 +996,9 @@ footer a:hover {
     }
 
     .join-member {
-        display: flex;
-        justify-content: center;
         align-items: center;
     }
 
-    .table {
-        margin: 0 auto;
-    }
 
     .join-link {
         max-width: 90%;
